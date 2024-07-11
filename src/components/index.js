@@ -1,4 +1,5 @@
-export { default as Footer } from "./footer/Footer";
-export { default as Navbar } from "./navbar/Navbar";
-export { default as Hero } from "./hero/Hero";
-export { default as Skills } from "./skills/Skills";
+export { default as Footer } from "./Footer";
+export { default as Navbar } from "./Navbar";
+export { default as Hero } from "./Hero";
+export { default as Skills } from "./Skills";
+export { default as Projects } from "./Projects";

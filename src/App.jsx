@@ -1,14 +1,18 @@
-import { useState } from "react";
 import "./App.css";
+import React, { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 
-import { Navbar, Skills, Hero, Footer } from "./components";
+import { Navbar, Skills, Hero, Footer, Projects } from "./components";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Skills />
+      <Suspense>
+        <Hero />
+        <Projects />
+        <Skills />
+      </Suspense>
       <Footer />
     </>
   );
