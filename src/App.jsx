@@ -7,13 +7,15 @@ import { Navbar, Skills, Hero, Footer, Projects } from "./components";
 function App() {
   return (
     <>
-      <Navbar />
-      <Suspense>
-        <Hero />
-        <Projects />
-        <Skills />
-      </Suspense>
-      <Footer />
+      <div className="bg-blue-900 text-slate-300">
+        <Navbar />
+        <Suspense>
+          <Hero />
+          <Projects />
+          <Skills />
+        </Suspense>
+        <Footer />
+      </div>
     </>
   );
 }
