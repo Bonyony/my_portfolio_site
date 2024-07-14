@@ -2,17 +2,27 @@ import "./App.css";
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Navbar, Skills, Hero, Footer, Projects } from "./components";
+import {
+  Navbar,
+  Skills,
+  Hero,
+  Footer,
+  Projects,
+  About,
+  Contact,
+} from "./components";
 
 function App() {
   return (
     <>
-      <div className="bg-blue-900 text-slate-300">
+      <div className=" text-slate-900">
         <Navbar />
         <Suspense>
           <Hero />
           <Projects />
           <Skills />
+          <About />
+          <Contact />
         </Suspense>
         <Footer />
       </div>

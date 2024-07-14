@@ -2,20 +2,16 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="  bg-gray-900">
-      <h1 className="font-black text-8xl text-center">FRANK FRANCIONE</h1>
-      <div className="">
-        <img
-          src="./src/assets/images/lookingGlass.jpeg"
-          alt="Looking Glass Artwork"
-          className="max-w-[600px] mx-auto"
-        />
+    <>
+      <div className="flex flex-row">
+        <h1 className="font-black text-8xl w-1/2 ">FRANK FRANCIONE</h1>
       </div>
       <p>
         Something about me and how good I am at doing computer things, like
-        making the projects and helping out.
+        making the projects and helping out. <br />
+        Perhaps have the text scroll like it is in Star Wars
       </p>
-    </div>
+    </>
   );
 };
 

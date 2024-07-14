@@ -24,7 +24,7 @@ const Menu = () => {
 
 const Navbar = () => {
   return (
-    <div className=" flex flex-row justify-evenly p-5   text-lg">
+    <div className=" flex flex-row justify-center p-5   text-lg">
       <Menu />
     </div>
   );
