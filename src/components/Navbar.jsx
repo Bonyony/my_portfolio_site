@@ -5,19 +5,29 @@ const Menu = () => {
   return (
     <ul className="flex flex-row items-center gap-14 p-2 font-mono ">
       <li>
-        <a href="">Home</a>
+        <a className="hover:bg-blue-300 transition-all duration-300" href="">
+          Home
+        </a>
       </li>
       <li>
-        <a href="">Projects</a>
+        <a className="hover:bg-red-300 transition-all duration-300" href="">
+          Projects
+        </a>
       </li>
       <li>
-        <a href="">Skills</a>
+        <a className="hover:bg-amber-300 transition-all duration-300" href="">
+          Skills
+        </a>
       </li>
       <li>
-        <a href="">About</a>
+        <a className="hover:bg-green-300 transition-all duration-300" href="">
+          About
+        </a>
       </li>
       <li>
-        <a href="">Contact</a>
+        <a className="hover:bg-pink-300 transition-all duration-300" href="">
+          Contact
+        </a>
       </li>
     </ul>
   );

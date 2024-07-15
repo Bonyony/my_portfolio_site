@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className="mx-24 mt-40 mb-24 ">
       <h1 className="font-black text-5xl">SKILLS</h1>
-      <div className="font-mono mt-5">
+      <div className="font-mono mt-5 bg-blue-300 ">
         <p>
           Skills will include: JS, HTML5, CSS3, React, React Native,
           TailwindCSS, NativewindCSS... <br />
