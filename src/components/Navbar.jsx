@@ -3,7 +3,7 @@ import myLogo from "../assets/images/lookingGlass.jpeg";
 
 const Menu = () => {
   return (
-    <ul className="flex flex-row items-center gap-14 p-2 font-mono ">
+    <ul className="flex flex-row items-center gap-14 p-2 font-mono  ">
       <li>
         <a
           className="hover:bg-blue-300 p-1 transition-all duration-100"
@@ -47,7 +47,7 @@ const Menu = () => {
 
 const Navbar = () => {
   return (
-    <div className="z-20 fixed top-0 w-full ">
+    <div className="z-10 fixed top-0 w-full ">
       <div className=" flex flex-row justify-between p-5 font-semibold text-lg">
         <img
           src={myLogo}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="mx-24 mt-40 mb-24">
+    <div className="mx-24 mt-40 mb-24  ">
       <h1 className="font-black text-5xl ">SELECTED PROJECTS</h1>
 
       <div
