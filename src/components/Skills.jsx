@@ -227,13 +227,14 @@ const Skills = () => {
               </g>
             </svg>
           </div>
-          <div className="bg-red-100 max-w-[50%] p-2 rounded-tr-xl rounded-bl-xl">
+          <div className="bg-cyan-100 max-w-[50%] p-2 rounded-tr-xl rounded-bl-xl">
             <p>
               <strong>Expo</strong> and <strong>TypeScript</strong> are
               technologies which I have worked with, but am still builing up my
               skillbase. Expo is my favorite tool on this entire list as when
               combined with Expo Go, writing React Native code and seeing it
-              appear on your screen truly feels like living in the future.
+              appear on your phone screen truly feels like living in the future.
+              I use TypeScript mainly in collaboration with others.
             </p>
           </div>
         </div>
