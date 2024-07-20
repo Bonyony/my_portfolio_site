@@ -1,14 +1,12 @@
 import React from "react";
+import mggPic from "../assets/images/MGG_homepage.png";
 
 const Projects = () => {
   return (
     <div className="mx-24 mt-40 mb-24  ">
       <h1 className="font-black text-5xl ">SELECTED PROJECTS</h1>
 
-      <div
-        id="projectTotal1"
-        className="flex flex-row font-mono justify-between mt-5"
-      >
+      <div id="projectTotal1" className="font-mono justify-between mt-5">
         <div
           id="projectDetail"
           className="flex-col bg-blue-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
@@ -106,7 +104,7 @@ const Projects = () => {
             These are the applications and projects that I have worked on with
             my company Mellow Golem Games.
           </p>
-          <p>There can even be an image here</p>
+          <img src={mggPic} alt="" />
           <div id="techStack">
             <ul className="grid grid-cols-2 gap-2 font-semibold">
               <li>TypeScript</li>

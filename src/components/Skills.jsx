@@ -65,7 +65,8 @@ const Skills = () => {
               <strong>HTML5</strong>, <strong>CSS3</strong> and{" "}
               <strong>JavaScript</strong> are the technologies which make up my
               core web-stack. These are the foundations for everything that I
-              do. I am very confident in my skills with each of these!
+              do. I am very confident in my skills and abilities with each of
+              these!
             </p>
           </div>
         </div>
@@ -177,7 +178,7 @@ const Skills = () => {
           </div>
           <div className="bg-slate-100 max-w-[50%] p-2 rounded-tr-xl rounded-bl-xl">
             <p>
-              <strong>Git</strong> (<strong>GitHub</strong>) is what make my
+              <strong>Git</strong> (<strong>GitHub</strong>) is what makes my
               collaborative work easy. Whether I am contributing to projects,
               studying repositories or using libraries; I am always using Git.
             </p>

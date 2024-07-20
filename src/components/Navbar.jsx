@@ -51,7 +51,7 @@ const Menu = () => {
 const Navbar = () => {
   return (
     <div className="z-10 fixed top-0 w-full ">
-      <div className=" flex flex-row justify-between p-5 font-semibold text-lg">
+      <div className=" flex flex-row justify-between pt-5 px-5 font-semibold text-lg">
         <img
           src={myLogo}
           alt="Some of my own artwork"
