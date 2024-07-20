@@ -19,11 +19,11 @@ const Projects = () => {
             This is a page I created to show off my renders made with the
             React-Three-Fiber and Drei libraries. It is intended to be a
             showcase of features and designs that can integrate into webpages.
-            This website is not intended to be "finished", but rather
-            continually updated and remade as I continue to progress with 3d
-            modeling and development in my career.
+            This website is not meant to be "finished", but rather continually
+            updated and remade as I continue to progress with 3D modeling and
+            development in my career.
           </p>
-          <div className="grid grid-cols-2 gap-1 mt-2">
+          <div className="grid grid-cols-2 gap-5 mt-2 mx-2">
             <img
               src={renderPic}
               className="rounded-md"
@@ -31,13 +31,24 @@ const Projects = () => {
             />
             <div id="techStack">
               <ul className="grid grid-cols-2 gap-2 font-semibold">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>TailwindCSS</li>
-                <li>React-Three-Fiber</li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  JavaScript
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  React
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  TailwindCSS
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  React-Three-Fiber
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  Drei Library
+                </li>
               </ul>
             </div>
-            <div id="btns" className="flex justify-center gap-2 mt-1">
+            <div id="btns" className="flex justify-center gap-2 mb-1">
               <a
                 href=""
                 className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
@@ -73,7 +84,7 @@ const Projects = () => {
             the chord, in both text form and displayed on a musical staff
             (treble cleff only).
           </p>
-          <div className="grid grid-cols-2 gap-1 mt-2">
+          <div className="grid grid-cols-2 gap-5 mt-2 mx-2">
             <img
               src={chordPic}
               className="rounded-md"
@@ -81,13 +92,21 @@ const Projects = () => {
             />
             <div id="techStack">
               <ul className="grid grid-cols-2 gap-2 font-semibold">
-                <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS + Bootstrap</li>
-                <li>VexFlow Library</li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  JavaScript
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  HTML5
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  CSS + Bootstrap
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  VexFlow Library
+                </li>
               </ul>
             </div>
-            <div id="btns" className="flex justify-center gap-2 mt-1">
+            <div id="btns" className="flex justify-center gap-2 mb-1">
               <a
                 href=""
                 className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
@@ -113,13 +132,13 @@ const Projects = () => {
           id="projectDetail"
           className="flex-col bg-amber-300 p-2 w-full rounded-tr-xl rounded-bl-xl"
         >
-          <h2 className="font-bold text-3xl">OUR APPS</h2>
+          <h2 className="font-bold text-3xl">OUR APPS (Mellow Golem Games)</h2>
           <p>
             These are the applications and projects that I have worked on with
             my company Mellow Golem Games. I help to develop applications that
             assist with the play of table-top RPGs.
           </p>
-          <div className="grid grid-cols-2 gap-1 mt-2">
+          <div className="grid grid-cols-2 gap-5 mt-2 mx-2">
             <img
               src={mggPic}
               className="rounded-md"
@@ -127,12 +146,18 @@ const Projects = () => {
             />
             <div id="techStack">
               <ul className="grid grid-cols-2 gap-2 font-semibold">
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>TailwindCSS + CSS</li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  TypeScript
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  React
+                </li>
+                <li className="bg-white p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  TailwindCSS + CSS
+                </li>
               </ul>
             </div>
-            <div id="btns" className="flex justify-center gap-2 mt-1">
+            <div id="btns" className="flex justify-center gap-2 mb-1">
               <a
                 href=""
                 className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"

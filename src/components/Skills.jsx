@@ -227,7 +227,7 @@ const Skills = () => {
               </g>
             </svg>
           </div>
-          <div className="bg-cyan-100 max-w-[50%] p-2 rounded-tr-xl rounded-bl-xl">
+          <div className="bg-slate-50 max-w-[50%] p-2 rounded-tr-xl rounded-bl-xl">
             <p>
               <strong>Expo</strong> and <strong>TypeScript</strong> are
               technologies which I have worked with, but am still builing up my

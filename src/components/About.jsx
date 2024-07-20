@@ -4,12 +4,14 @@ const About = () => {
   return (
     <div className="mx-24 mt-40 mb-24 ">
       <h1 className="font-black text-5xl ">ABOUT</h1>
-      <div className="font-mono mt-5 p-2 bg-green-300">
+      <div className="font-mono mt-5 p-2 bg-blue-300">
         <p>
           My name is <strong>Frank Francione</strong>. <br /> I love playing
           music (guitar, bass, drums, singing, piano and maybe some harmonica
-          too!). <br />I am a creative writer! Songs + poetry (and RPG
-          supplements at{" "}
+          too!). My favorite artists are{" "}
+          <strong className="text-purple-700">Prince</strong> and{" "}
+          <strong>The Beatles</strong>. <br />I am a creative writer! Songs +
+          poetry (and RPG supplements at{" "}
           <strong>
             <a
               href="https://www.mellowgolem.com/"
@@ -20,7 +22,7 @@ const About = () => {
             </a>
           </strong>
           ). <br /> I am an artist, mainly working with collage/mixed media or
-          painting. 3D rendering is becoming a new favorite. <br />I love
+          painting. 3D rendering is becoming a new favorite. <br />I adore
           animals and have volunteered with a wildlife rehab for years now. My
           favorite animals are Ocelots and the humble Hyrax. <br />
           And yes, I love to code :)
