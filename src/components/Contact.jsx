@@ -1,13 +1,15 @@
 import React from "react";
+import Form from "./Form";
 
 const Contact = () => {
   return (
-    <div className="mx-24 mt-40 mb-24  ">
-      <h1 className="font-black text-5xl ">CONTACT</h1>
-      <div className="font-mono mt-5 p-2 bg-pink-300">
-        <p>A form or links to my contacts, maybe a resume download</p>
+    <>
+      <div id="contact"></div>
+      <div className="mx-24 pt-40 mb-24  ">
+        <h1 className="font-black text-5xl ">CONTACT ME</h1>
+        <Form />
       </div>
-    </div>
+    </>
   );
 };
 

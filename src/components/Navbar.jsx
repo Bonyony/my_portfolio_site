@@ -7,7 +7,7 @@ const Menu = () => {
       <li>
         <a
           className="bg-white hover:bg-blue-300 p-1 transition-all duration-100"
-          href=""
+          href="#home"
         >
           Home
         </a>
@@ -15,7 +15,7 @@ const Menu = () => {
       <li>
         <a
           className="bg-white hover:bg-red-300 p-1 transition-all duration-100"
-          href=""
+          href="#projects"
         >
           Projects
         </a>
@@ -23,7 +23,7 @@ const Menu = () => {
       <li>
         <a
           className="bg-white hover:bg-amber-300 p-1 transition-all duration-100"
-          href=""
+          href="#skills"
         >
           Skills
         </a>
@@ -31,7 +31,7 @@ const Menu = () => {
       <li>
         <a
           className="bg-white hover:bg-green-300 p-1 transition-all duration-100"
-          href=""
+          href="#about"
         >
           About
         </a>
@@ -39,7 +39,7 @@ const Menu = () => {
       <li>
         <a
           className="bg-white hover:bg-pink-300 p-1 transition-all duration-100"
-          href=""
+          href="#contact"
         >
           Contact
         </a>
