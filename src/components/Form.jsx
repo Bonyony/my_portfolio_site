@@ -29,7 +29,7 @@ const Form = () => {
   };
 
   return (
-    <div className="font-mono text-sm sm:text-md mt-5 p-2  bg-slate-300 rounded-tr-xl rounded-bl-xl">
+    <div className="font-mono text-sm sm:text-base mt-5 p-2  bg-slate-300 rounded-tr-xl rounded-bl-xl">
       <form onSubmit={onSubmit} className="flex flex-col w-full">
         <label htmlFor="name">YOUR NAME: </label>
         <input type="text" name="name" placeholder="Jimbo Jones" required />

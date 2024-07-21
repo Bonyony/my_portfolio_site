@@ -9,7 +9,7 @@ const Skills = () => {
 
         <div
           id="logos"
-          className="grid grid-flow-row gap-5 mt-5 text-sm sm:text-md font-mono"
+          className="grid grid-flow-row gap-5 mt-5 text-sm sm:text-base font-mono"
         >
           <div
             id="webstack"
