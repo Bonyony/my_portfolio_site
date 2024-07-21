@@ -4,9 +4,9 @@ const About = () => {
   return (
     <>
       <div id="about"></div>
-      <div className="mx-24 mt-40 mb-24">
-        <h1 className="font-black text-5xl ">ABOUT</h1>
-        <div className="font-mono mt-5 p-2 bg-indigo-200 rounded-tr-xl rounded-bl-xl">
+      <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
+        <h1 className="font-black text-3xl sm:text-5xl ">ABOUT</h1>
+        <div className="font-mono text-sm sm:text-md mt-5 p-2 bg-indigo-200 rounded-tr-xl rounded-bl-xl">
           <p>
             My name is <strong>Frank Francione</strong>. <br /> I love playing
             music (guitar, bass, drums, singing, piano and maybe some harmonica

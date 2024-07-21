@@ -7,17 +7,17 @@ const Projects = () => {
   return (
     <>
       <div id="projects"></div>
-      <div className="mx-24 mt-40 mb-24">
-        <h1 className="font-black text-5xl ">SELECTED PROJECTS</h1>
+      <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
+        <h1 className="font-black text-3xl sm:text-5xl ">SELECTED PROJECTS</h1>
 
         <div id="projectTotal1" className="font-mono justify-between mt-5">
           <div
             id="projectDetail"
-            className="flex-col bg-blue-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
+            className="bg-blue-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
           >
-            <h2 className="font-bold text-3xl">3D RENDERS</h2>
+            <h2 className="font-bold text-xl sm:text-3xl">3D RENDERS</h2>
 
-            <p>
+            <p className="text-sm sm:text-md">
               This is a page I created to show off my renders made with the
               React-Three-Fiber and Drei libraries. It is intended to be a
               showcase of features and designs that can integrate into webpages.
@@ -25,14 +25,14 @@ const Projects = () => {
               updated and remade as I continue to progress with 3D modeling and
               development in my career.
             </p>
-            <div className="grid grid-cols-2 gap-5 mt-2 mx-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-2 sm:mx-2">
               <img
                 src={renderPic}
                 className="rounded-md"
                 alt="A picture of my renders (a React logo)"
               />
               <div id="techStack">
-                <ul className="grid grid-cols-2 gap-2 font-semibold">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
                   <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
                     JavaScript
                   </li>
@@ -77,8 +77,8 @@ const Projects = () => {
             id="projectDetail"
             className="flex-col bg-red-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
           >
-            <h2 className="font-bold text-3xl">CHORD FINDER</h2>
-            <p>
+            <h2 className="font-bold text-xl sm:text-3xl">CHORD FINDER</h2>
+            <p className="text-sm sm:text-md">
               I made this application to help musicians find the appropriate
               chords, quickly and easily, for whatever key they are playing in.
               The user can choose from all 12 keys, major or minor scales, and
@@ -86,14 +86,14 @@ const Projects = () => {
               make the chord, in both text form and displayed on a musical staff
               (treble cleff only).
             </p>
-            <div className="grid grid-cols-2 gap-5 mt-2 mx-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-2 sm:mx-2">
               <img
                 src={chordPic}
                 className="rounded-md"
                 alt="A picture of my chord finder website"
               />
               <div id="techStack">
-                <ul className="grid grid-cols-2 gap-2 font-semibold">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
                   <li className="bg-red-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
                     JavaScript
                   </li>
@@ -134,22 +134,22 @@ const Projects = () => {
             id="projectDetail"
             className="flex-col bg-amber-300 p-2 w-full rounded-tr-xl rounded-bl-xl"
           >
-            <h2 className="font-bold text-3xl">
+            <h2 className="font-bold text-xl sm:text-3xl">
               OUR APPS (Mellow Golem Games)
             </h2>
-            <p>
+            <p className="text-sm sm:text-md">
               These are the applications and projects that I have worked on with
               my company Mellow Golem Games. I help to develop applications that
               assist with the play of table-top RPGs.
             </p>
-            <div className="grid grid-cols-2 gap-5 mt-2 mx-2 ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-2 sm:mx-2">
               <img
                 src={mggPic}
                 className="rounded-md "
                 alt="A picture of my company's homepage"
               />
               <div id="techStack">
-                <ul className="grid grid-cols-2 gap-2 font-semibold">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
                   <li className="bg-amber-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
                     TypeScript
                   </li>
