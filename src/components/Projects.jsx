@@ -144,8 +144,9 @@ const Projects = () => {
               and creative director. I help the owner (another software
               developer) with developing applications that assist with the play
               of table-top RPGs. I am usually tasked with building components,
-              setting up our API handling or doing slight design changes. Stop
-              by our RPG Content section to see my writing as well.
+              setting up our API handling or doing slight design changes. These
+              are production apps, so I cannot share the code. Stop by our RPG
+              Content section to see my writing as well.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-2 sm:mx-2">
               <img
