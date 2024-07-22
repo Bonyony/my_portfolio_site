@@ -73,8 +73,7 @@ const Skills = () => {
                 <strong>HTML5</strong>, <strong>CSS3</strong> and{" "}
                 <strong>JavaScript</strong> are the technologies which make up
                 my core web-stack. These are the foundations for everything that
-                I do. I am very confident in my skills and abilities with each
-                of these!
+                I do, with or without any extra frameworks and libraries.
               </p>
             </div>
           </div>

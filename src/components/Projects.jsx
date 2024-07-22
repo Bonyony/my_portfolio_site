@@ -58,7 +58,8 @@ const Projects = () => {
                   Live Demo
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Bonyony/my-react-renders"
+                  target="_blank"
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
                   See the code
@@ -110,7 +111,8 @@ const Projects = () => {
               </div>
               <div id="btns" className="flex justify-center gap-2 mb-1">
                 <a
-                  href=""
+                  href="https://github.com/Bonyony/MusicProject"
+                  target="_blank"
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
                   Live Demo
@@ -138,9 +140,12 @@ const Projects = () => {
               OUR APPS (Mellow Golem Games)
             </h2>
             <p className="text-sm sm:text-base">
-              These are the applications and projects that I have worked on with
-              my company Mellow Golem Games. I help to develop applications that
-              assist with the play of table-top RPGs.
+              I work with the company Mellow Golem Games as a react developer
+              and creative director. I help the owner (another software
+              developer) with developing applications that assist with the play
+              of table-top RPGs. I am usually tasked with building components,
+              setting up our API handling or doing slight design changes. Stop
+              by our RPG Content section to see my writing as well.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-2 sm:mx-2">
               <img
@@ -163,16 +168,11 @@ const Projects = () => {
               </div>
               <div id="btns" className="flex justify-center gap-2 mb-1">
                 <a
-                  href=""
+                  href="https://www.mellowgolem.com/"
+                  target="_blank"
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
-                  Live Demo
-                </a>
-                <a
-                  href=""
-                  className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
-                >
-                  See the code
+                  Company Website
                 </a>
               </div>
             </div>
