@@ -52,7 +52,8 @@ const Projects = () => {
               </div>
               <div id="btns" className="flex justify-center gap-2 mb-1">
                 <a
-                  href=""
+                  href="https://my-react-renders-pl6bh.ondigitalocean.app/"
+                  target="_blank"
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
                   Live Demo
@@ -63,7 +64,6 @@ const Projects = () => {
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
                   See the code
-                  {/* Maybe have a GitHub logo here as an svg */}
                 </a>
               </div>
             </div>
@@ -111,14 +111,15 @@ const Projects = () => {
               </div>
               <div id="btns" className="flex justify-center gap-2 mb-1">
                 <a
-                  href="https://github.com/Bonyony/MusicProject"
+                  href="https://chordgenerator-r2pxg.ondigitalocean.app/"
                   target="_blank"
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
                   Live Demo
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Bonyony/MusicProject"
+                  target="_blank"
                   className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
                 >
                   See the code
