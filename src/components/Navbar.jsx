@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
-
+import { ThemeContext } from "../App";
 import myLogo from "../assets/images/lookingGlass.jpeg";
 
 const Menu = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <ul className="flex flex-row items-center gap-14 p-2 font-mono ">
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-blue-300 p-1 transition-all duration-100"
+          className={
+            "bg-opacity-80 hover:bg-blue-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white" : "bg-[#0a022d]")
+          }
           href="#home"
         >
           Home
@@ -16,7 +21,10 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-red-300 p-1 transition-all duration-100"
+          className={
+            "bg-white bg-opacity-80 hover:bg-red-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white" : "bg-[#0a022d]")
+          }
           href="#projects"
         >
           Projects
@@ -24,7 +32,10 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-amber-300 p-1 transition-all duration-100"
+          className={
+            "bg-white bg-opacity-80 hover:bg-amber-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white" : "bg-[#0a022d]")
+          }
           href="#skills"
         >
           Skills
@@ -32,7 +43,10 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-green-300 p-1 transition-all duration-100"
+          className={
+            "bg-white bg-opacity-80 hover:bg-green-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white" : "bg-[#0a022d]")
+          }
           href="#about"
         >
           About
@@ -40,7 +54,10 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-pink-300 p-1 transition-all duration-100"
+          className={
+            "bg-white bg-opacity-80 hover:bg-pink-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white" : "bg-[#0a022d]")
+          }
           href="#contact"
         >
           Contact
@@ -105,7 +122,7 @@ const Navbar = () => {
       className={`z-10 fixed top-0 w-full ${
         navbar && window.innerWidth < 768
           ? "bg-slate-200 bg-opacity-80"
-          : "bg-inherit"
+          : "bg-transparent"
       } `}
     >
       <div className=" flex flex-row justify-between pt-5 px-5 font-semibold text-lg">

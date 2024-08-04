@@ -1,4 +1,5 @@
 import React from "react";
+import Switch from "./Switch";
 
 const Hero = () => {
   return (
@@ -12,6 +13,9 @@ const Hero = () => {
           <p>Developer.</p>
           <p>Design focused.</p>
           <p>Musician, Writer, Artist, Animal Lover, etc.</p>
+        </div>
+        <div className="font-bold font-mono text-sm sm:text-base mt-5">
+          <Switch />
         </div>
       </div>
     </>

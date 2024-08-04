@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import mggPic from "../assets/images/MGG_homepage.png";
 import renderPic from "../assets/images/react-render-pic.png";
 import chordPic from "../assets/images/chordfinderpic.png";
+import { ThemeContext } from "../App";
 
 const Projects = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
       <div id="projects"></div>
@@ -13,7 +16,10 @@ const Projects = () => {
         <div id="projectTotal1" className="font-mono justify-between mt-5">
           <div
             id="projectDetail"
-            className="bg-blue-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
+            className={
+              "p-2 w-full rounded-tr-xl rounded-bl-xl " +
+              (theme ? "bg-blue-300 " : "bg-sky-800")
+            }
           >
             <h2 className="font-bold text-xl sm:text-3xl">3D RENDERS</h2>
 
@@ -33,19 +39,44 @@ const Projects = () => {
               />
               <div id="techStack">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-sky-700")
+                    }
+                  >
                     JavaScript
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-sky-700")
+                    }
+                  >
                     React
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-sky-700")
+                    }
+                  >
                     TailwindCSS
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-sky-700")
+                    }
+                  >
                     React-Three-Fiber
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-sky-700")
+                    }
+                  >
                     Drei Library
                   </li>
                 </ul>
