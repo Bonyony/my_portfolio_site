@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import mggPic from "../assets/images/MGG_homepage.png";
 import renderPic from "../assets/images/react-render-pic.png";
 import chordPic from "../assets/images/chordfinderpic.png";
+import { ThemeContext } from "../App";
 
 const Projects = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
       <div id="projects"></div>
@@ -13,7 +16,10 @@ const Projects = () => {
         <div id="projectTotal1" className="font-mono justify-between mt-5">
           <div
             id="projectDetail"
-            className="bg-blue-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
+            className={
+              "p-2 w-full rounded-tr-xl rounded-bl-xl " +
+              (theme ? "bg-blue-300 " : "bg-[#002451]")
+            }
           >
             <h2 className="font-bold text-xl sm:text-3xl">3D RENDERS</h2>
 
@@ -33,19 +39,44 @@ const Projects = () => {
               />
               <div id="techStack">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-[#404F7D]")
+                    }
+                  >
                     JavaScript
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-[#404F7D]")
+                    }
+                  >
                     React
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-[#404F7D]")
+                    }
+                  >
                     TailwindCSS
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-[#404F7D]")
+                    }
+                  >
                     React-Three-Fiber
                   </li>
-                  <li className="bg-blue-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-blue-100" : "bg-[#404F7D]")
+                    }
+                  >
                     Drei Library
                   </li>
                 </ul>
@@ -54,14 +85,24 @@ const Projects = () => {
                 <a
                   href="https://my-react-renders-pl6bh.ondigitalocean.app/"
                   target="_blank"
-                  className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
+                  className={
+                    "p-1 transition-all duration-75 " +
+                    (theme
+                      ? "bg-white hover:bg-slate-600 hover:text-white"
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415] ")
+                  }
                 >
                   Live Demo
                 </a>
                 <a
                   href="https://github.com/Bonyony/my-react-renders"
                   target="_blank"
-                  className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
+                  className={
+                    "p-1 transition-all duration-75 " +
+                    (theme
+                      ? "bg-white hover:bg-slate-600 hover:text-white"
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
+                  }
                 >
                   See the code
                 </a>
@@ -76,7 +117,10 @@ const Projects = () => {
         >
           <div
             id="projectDetail"
-            className="flex-col bg-red-300 p-2 w-full  rounded-tr-xl rounded-bl-xl"
+            className={
+              "flex-col p-2 w-full  rounded-tr-xl rounded-bl-xl " +
+              (theme ? "bg-red-300" : "bg-[#002451]")
+            }
           >
             <h2 className="font-bold text-xl sm:text-3xl">CHORD FINDER</h2>
             <p className="text-sm sm:text-base">
@@ -95,16 +139,36 @@ const Projects = () => {
               />
               <div id="techStack">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
-                  <li className="bg-red-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-red-100" : "bg-[#404F7D]")
+                    }
+                  >
                     JavaScript
                   </li>
-                  <li className="bg-red-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-red-100" : "bg-[#404F7D]")
+                    }
+                  >
                     HTML5
                   </li>
-                  <li className="bg-red-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-red-100" : "bg-[#404F7D]")
+                    }
+                  >
                     CSS + Bootstrap
                   </li>
-                  <li className="bg-red-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-red-100" : "bg-[#404F7D]")
+                    }
+                  >
                     VexFlow Library
                   </li>
                 </ul>
@@ -113,14 +177,24 @@ const Projects = () => {
                 <a
                   href="https://chordgenerator-r2pxg.ondigitalocean.app/"
                   target="_blank"
-                  className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
+                  className={
+                    "p-1 transition-all duration-75 " +
+                    (theme
+                      ? "bg-white hover:bg-slate-600 hover:text-white"
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
+                  }
                 >
                   Live Demo
                 </a>
                 <a
                   href="https://github.com/Bonyony/MusicProject"
                   target="_blank"
-                  className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
+                  className={
+                    "p-1 transition-all duration-75 " +
+                    (theme
+                      ? "bg-white hover:bg-slate-600 hover:text-white"
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
+                  }
                 >
                   See the code
                 </a>
@@ -135,7 +209,10 @@ const Projects = () => {
         >
           <div
             id="projectDetail"
-            className="flex-col bg-amber-300 p-2 w-full rounded-tr-xl rounded-bl-xl"
+            className={
+              "flex-col  p-2 w-full rounded-tr-xl rounded-bl-xl " +
+              (theme ? "bg-amber-300" : "bg-[#002451]")
+            }
           >
             <h2 className="font-bold text-xl sm:text-3xl">
               OUR APPS (Mellow Golem Games)
@@ -157,13 +234,28 @@ const Projects = () => {
               />
               <div id="techStack">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-md font-semibold">
-                  <li className="bg-amber-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-amber-100" : "bg-[#404F7D]")
+                    }
+                  >
                     TypeScript
                   </li>
-                  <li className="bg-amber-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-amber-100" : "bg-[#404F7D]")
+                    }
+                  >
                     React
                   </li>
-                  <li className="bg-amber-100 p-2 text-center rounded-tr-xl rounded-bl-xl">
+                  <li
+                    className={
+                      "p-2 text-center rounded-tr-xl rounded-bl-xl " +
+                      (theme ? "bg-amber-100" : "bg-[#404F7D]")
+                    }
+                  >
                     TailwindCSS + CSS
                   </li>
                 </ul>
@@ -172,7 +264,12 @@ const Projects = () => {
                 <a
                   href="https://www.mellowgolem.com/"
                   target="_blank"
-                  className="bg-white p-1 hover:bg-slate-600 hover:text-white transition-all duration-75"
+                  className={
+                    "p-1 transition-all duration-75 " +
+                    (theme
+                      ? "bg-white hover:bg-slate-600 hover:text-white"
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
+                  }
                 >
                   Company Website
                 </a>

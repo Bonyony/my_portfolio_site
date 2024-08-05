@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
-
+import { ThemeContext } from "../App";
 import myLogo from "../assets/images/lookingGlass.jpeg";
 
 const Menu = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <ul className="flex flex-row items-center gap-14 p-2 font-mono ">
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-blue-300 p-1 transition-all duration-100"
+          className={
+            "p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-blue-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#home"
         >
           Home
@@ -16,7 +23,12 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-red-300 p-1 transition-all duration-100"
+          className={
+            " p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-red-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#projects"
         >
           Projects
@@ -24,7 +36,12 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-amber-300 p-1 transition-all duration-100"
+          className={
+            " p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-amber-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#skills"
         >
           Skills
@@ -32,7 +49,12 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-green-300 p-1 transition-all duration-100"
+          className={
+            " p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-green-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#about"
         >
           About
@@ -40,7 +62,12 @@ const Menu = () => {
       </li>
       <li>
         <a
-          className="bg-white bg-opacity-80 hover:bg-pink-300 p-1 transition-all duration-100"
+          className={
+            " p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-pink-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#contact"
         >
           Contact
@@ -51,11 +78,18 @@ const Menu = () => {
 };
 
 const SmallMenu = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <ul className="flex flex-col items-end gap-5 mt-5 font-mono  ">
       <li>
         <a
-          className="bg-white hover:bg-blue-300 p-1 transition-all duration-100"
+          className={
+            "p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-blue-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#home"
         >
           Home
@@ -63,7 +97,12 @@ const SmallMenu = () => {
       </li>
       <li>
         <a
-          className="bg-white hover:bg-red-300 p-1 transition-all duration-100"
+          className={
+            "p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-red-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#projects"
         >
           Projects
@@ -71,7 +110,12 @@ const SmallMenu = () => {
       </li>
       <li>
         <a
-          className="bg-white hover:bg-amber-300 p-1 transition-all duration-100"
+          className={
+            "p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-amber-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#skills"
         >
           Skills
@@ -79,7 +123,12 @@ const SmallMenu = () => {
       </li>
       <li>
         <a
-          className="bg-white hover:bg-green-300 p-1 transition-all duration-100"
+          className={
+            "p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-green-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#about"
         >
           About
@@ -87,7 +136,12 @@ const SmallMenu = () => {
       </li>
       <li>
         <a
-          className="bg-white hover:bg-pink-300 p-1 transition-all duration-100"
+          className={
+            "p-1 transition-all duration-100 " +
+            (theme
+              ? "bg-white bg-opacity-80 hover:bg-pink-300"
+              : "bg-[#0a022d] bg-opacity-50 hover:bg-emerald-500")
+          }
           href="#contact"
         >
           Contact
@@ -98,21 +152,24 @@ const SmallMenu = () => {
 };
 
 const Navbar = () => {
+  const { theme } = useContext(ThemeContext);
   const [navbar, setNavbar] = useState(false);
 
   return (
     <div
-      className={`z-10 fixed top-0 w-full ${
-        navbar && window.innerWidth < 768
-          ? "bg-slate-200 bg-opacity-80"
-          : "bg-inherit"
-      } `}
+      className={
+        `z-10 fixed top-0 w-full ${
+          navbar && window.innerWidth < 768
+            ? "bg-slate-200 bg-opacity-80"
+            : "bg-transparent"
+        } ` + (theme ? "" : "bg-slate-800 bg-opacity-80")
+      }
     >
       <div className=" flex flex-row justify-between pt-5 px-5 font-semibold text-lg">
         <img
           src={myLogo}
           alt="Some of my own artwork"
-          className="max-w-14 max-h-14"
+          className={"max-w-14 max-h-14 " + (theme ? "" : "grayscale")}
         />
         <div className="md:hidden">
           <button
@@ -123,7 +180,12 @@ const Navbar = () => {
               <div className="flex flex-col items-end">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-10 h-10 bg-white hover:bg-red-300 transition-all duration-100"
+                  className={
+                    "w-10 h-10  transition-all duration-100 " +
+                    (theme
+                      ? "bg-white hover:bg-red-300"
+                      : "bg-[#0a022d] hover:bg-red-500")
+                  }
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -139,7 +201,12 @@ const Navbar = () => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-10 h-10 bg-white bg-opacity-55 hover:bg-sky-300 transition-all duration-100"
+                className={
+                  "w-10 h-10  bg-opacity-55  transition-all duration-100 " +
+                  (theme
+                    ? "bg-white hover:bg-sky-300"
+                    : "bg-[#0a022d] hover:bg-emerald-500")
+                }
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
