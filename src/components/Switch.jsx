@@ -16,7 +16,7 @@ const Switch = () => {
         className="inline-block pl-[0.15rem] hover:cursor-pointer"
         htmlFor="flexSwitchChecked"
       >
-        Toggle Dark Mode
+        {theme ? "Fancy a dark mode?" : "Bring back the sun!"}
       </label>
     </div>
   );

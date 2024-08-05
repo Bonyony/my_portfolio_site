@@ -89,7 +89,7 @@ const Projects = () => {
                     "p-1 transition-all duration-75 " +
                     (theme
                       ? "bg-white hover:bg-slate-600 hover:text-white"
-                      : "bg-[#f7df1e] text-black hover:bg-white ")
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415] ")
                   }
                 >
                   Live Demo
@@ -101,7 +101,7 @@ const Projects = () => {
                     "p-1 transition-all duration-75 " +
                     (theme
                       ? "bg-white hover:bg-slate-600 hover:text-white"
-                      : "bg-[#f7df1e] text-black hover:bg-white")
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
                   }
                 >
                   See the code
@@ -181,7 +181,7 @@ const Projects = () => {
                     "p-1 transition-all duration-75 " +
                     (theme
                       ? "bg-white hover:bg-slate-600 hover:text-white"
-                      : "bg-[#f7df1e] text-black hover:bg-white")
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
                   }
                 >
                   Live Demo
@@ -193,7 +193,7 @@ const Projects = () => {
                     "p-1 transition-all duration-75 " +
                     (theme
                       ? "bg-white hover:bg-slate-600 hover:text-white"
-                      : "bg-[#f7df1e] text-black hover:bg-white")
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
                   }
                 >
                   See the code
@@ -268,7 +268,7 @@ const Projects = () => {
                     "p-1 transition-all duration-75 " +
                     (theme
                       ? "bg-white hover:bg-slate-600 hover:text-white"
-                      : "bg-[#f7df1e] text-black hover:bg-white")
+                      : "bg-[#f7df1e] text-black hover:bg-[#b7a415]")
                   }
                 >
                   Company Website
