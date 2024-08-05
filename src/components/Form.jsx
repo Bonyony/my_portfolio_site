@@ -1,9 +1,10 @@
 import { useState } from "react";
-import React from "react";
-import gargoylePic from "../assets/images/Gargoyle.jpeg";
+import React, { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const Form = () => {
   const [result, setResult] = React.useState("");
+  const { theme } = useContext(ThemeContext);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -29,18 +30,27 @@ const Form = () => {
   };
 
   return (
-    <div className="font-mono text-sm sm:text-base mt-5 p-2  bg-slate-300 rounded-tr-xl rounded-bl-xl">
+    <div
+      className={
+        "font-mono text-sm sm:text-base mt-5 p-2   rounded-tr-xl rounded-bl-xl " +
+        (theme ? "bg-slate-300" : "bg-[#404F7D]")
+      }
+    >
       <form onSubmit={onSubmit} className="flex flex-col w-full">
         <label htmlFor="name">YOUR NAME: </label>
         <input type="text" name="name" placeholder="Jimbo Jones" required />
-        <label htmlFor="email">YOUR EMAIL: </label>
+        <label className="mt-3" htmlFor="email">
+          YOUR EMAIL:{" "}
+        </label>
         <input
           type="email"
           name="email"
           placeholder="possumluvr@gmail.com"
           required
         />
-        <label htmlFor="message">YOUR MESSAGE FOR ME: </label>
+        <label className="mt-3" htmlFor="message">
+          YOUR MESSAGE FOR ME:{" "}
+        </label>
         <textarea
           rows="4"
           name="message"
@@ -49,7 +59,12 @@ const Form = () => {
         ></textarea>
 
         <button
-          className="bg-white hover:bg-slate-600 hover:text-white transition-all duration-75 mt-2 rounded-lg"
+          className={
+            " transition-all duration-75 mt-4 rounded-lg " +
+            (theme
+              ? "bg-white hover:bg-slate-600 hover:text-white"
+              : "bg-white text-black hover:bg-emerald-500")
+          }
           type="submit"
         >
           Submit!

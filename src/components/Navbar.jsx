@@ -11,8 +11,8 @@ const Menu = () => {
       <li>
         <a
           className={
-            "bg-opacity-80 hover:bg-blue-300 p-1 transition-all duration-100 " +
-            (theme ? "bg-white" : "bg-[#0a022d]")
+            " hover:bg-blue-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white bg-opacity-80" : "bg-[#0a022d] bg-opacity-50")
           }
           href="#home"
         >
@@ -22,8 +22,8 @@ const Menu = () => {
       <li>
         <a
           className={
-            "bg-white bg-opacity-80 hover:bg-red-300 p-1 transition-all duration-100 " +
-            (theme ? "bg-white" : "bg-[#0a022d]")
+            " hover:bg-red-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white bg-opacity-80" : "bg-[#0a022d] bg-opacity-50")
           }
           href="#projects"
         >
@@ -33,8 +33,8 @@ const Menu = () => {
       <li>
         <a
           className={
-            "bg-white bg-opacity-80 hover:bg-amber-300 p-1 transition-all duration-100 " +
-            (theme ? "bg-white" : "bg-[#0a022d]")
+            "hover:bg-amber-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white bg-opacity-80" : "bg-[#0a022d] bg-opacity-50")
           }
           href="#skills"
         >
@@ -44,8 +44,8 @@ const Menu = () => {
       <li>
         <a
           className={
-            "bg-white bg-opacity-80 hover:bg-green-300 p-1 transition-all duration-100 " +
-            (theme ? "bg-white" : "bg-[#0a022d]")
+            " hover:bg-green-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white bg-opacity-80" : "bg-[#0a022d] bg-opacity-50")
           }
           href="#about"
         >
@@ -55,8 +55,8 @@ const Menu = () => {
       <li>
         <a
           className={
-            "bg-white bg-opacity-80 hover:bg-pink-300 p-1 transition-all duration-100 " +
-            (theme ? "bg-white" : "bg-[#0a022d]")
+            "hover:bg-pink-300 p-1 transition-all duration-100 " +
+            (theme ? "bg-white bg-opacity-80" : "bg-[#0a022d] bg-opacity-50")
           }
           href="#contact"
         >
