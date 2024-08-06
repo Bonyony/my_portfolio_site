@@ -21,7 +21,12 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, setTheme }}>
-        <div className={theme ? "text-slate-900" : "text-white bg-[#0a022d]"}>
+        <div
+          className={
+            "overflow-hidden " +
+            (theme ? "text-slate-900" : "text-white bg-[#0a022d]")
+          }
+        >
           <Background />
           <Navbar />
           <Suspense>

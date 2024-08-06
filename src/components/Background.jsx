@@ -6,7 +6,7 @@ const Background = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div>
+    <div className="main">
       <div
         className={
           "transition-all duration-500 " + (theme ? "circleRed" : "triangleRed")
@@ -34,6 +34,12 @@ const Background = () => {
         className={
           "transition-all duration-500 " +
           (theme ? "circlePink" : "trianglePink")
+        }
+      ></div>
+      <div
+        className={
+          "transition-all duration-500 " +
+          (theme ? "circlePurple" : "trianglePurple")
         }
       ></div>
     </div>

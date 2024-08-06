@@ -33,7 +33,7 @@ const Form = () => {
     <div
       className={
         "font-mono text-sm sm:text-base mt-5 p-2   rounded-tr-xl rounded-bl-xl " +
-        (theme ? "bg-slate-300" : "bg-[#404F7D]")
+        (theme ? "bg-neutral-300" : "bg-[#404F7D]")
       }
     >
       <form onSubmit={onSubmit} className="flex flex-col w-full">

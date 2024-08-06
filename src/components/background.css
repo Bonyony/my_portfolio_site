@@ -1,31 +1,35 @@
+.main {
+  overflow: hidden;
+}
 /* Circles */
 .circleRed {
   height: 150px;
   width: 150px;
   position: absolute;
-  left: 7.5rem;
-  top: 7.5rem;
-  background-color: lightcoral;
+  left: 12rem;
+  top: 6rem;
+  background-color: #fca5a5;
   border-radius: 50%;
   z-index: -10;
 }
 .circleBlue {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  overflow: hidden;
+  left: 660px;
+  top: 200px;
+  background-color: #93c5fd;
+  border-radius: 50%;
+  z-index: -11;
+}
+.circleYellow {
   height: 250px;
   width: 250px;
   position: absolute;
   left: -70px;
   top: 340px;
-  background-color: lightblue;
-  border-radius: 50%;
-  z-index: -11;
-}
-.circleYellow {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: 660px;
-  top: 200px;
-  background-color: wheat;
+  background-color: #fcd34d;
   border-radius: 50%;
   z-index: -12;
 }
@@ -34,8 +38,8 @@
   width: 200px;
   position: absolute;
   left: 460px;
-  top: 30px;
-  background-color: lightgreen;
+  top: -20px;
+  background-color: #86efac;
   border-radius: 50%;
   z-index: -13;
 }
@@ -45,13 +49,23 @@
   position: absolute;
   left: 560px;
   top: 500px;
-  background-color: pink;
+  background-color: #f9a8d4;
+  border-radius: 50%;
+  z-index: -14;
+}
+.circlePurple {
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  left: 390px;
+  top: 340px;
+  background-color: #d8b4fe;
   border-radius: 50%;
   z-index: -14;
 }
 
 /* Triangles */
-.triangleRed {
+/* .triangleRed {
   height: 150px;
   width: 150px;
   position: absolute;
@@ -59,7 +73,7 @@
   top: 7.5rem;
   background-color: lightcoral;
   border-radius: 50%;
-  z-index: 1;
+  z-index: -11;
 }
 .triangleBlue {
   height: 250px;
@@ -100,4 +114,4 @@
   background-color: pink;
   border-radius: 50%;
   z-index: -14;
-}
+} */

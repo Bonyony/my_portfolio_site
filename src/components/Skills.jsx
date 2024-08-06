@@ -74,7 +74,7 @@ const Skills = () => {
             <div
               className={
                 " lg:max-w-[50%] mt-4 lg:mt-0 p-2 rounded-tr-xl rounded-bl-xl " +
-                (theme ? "bg-slate-300" : "bg-[#002451]")
+                (theme ? "bg-blue-300" : "bg-[#002451]")
               }
             >
               <p>
@@ -172,7 +172,7 @@ const Skills = () => {
             <div
               className={
                 " lg:max-w-[50%] mt-4 lg:mt-0 p-2 rounded-tr-xl rounded-bl-xl " +
-                (theme ? "bg-slate-200" : "bg-[#002451]")
+                (theme ? "bg-red-300" : "bg-[#002451]")
               }
             >
               <p>
@@ -205,7 +205,7 @@ const Skills = () => {
             <div
               className={
                 " lg:max-w-[50%] mt-4 lg:mt-0 p-2 rounded-tr-xl rounded-bl-xl " +
-                (theme ? "bg-slate-100" : "bg-[#002451]")
+                (theme ? "bg-amber-300" : "bg-[#002451]")
               }
             >
               <p>
@@ -264,7 +264,7 @@ const Skills = () => {
             <div
               className={
                 " lg:max-w-[50%] mt-4 lg:mt-0 p-2 rounded-tr-xl rounded-bl-xl " +
-                (theme ? "bg-slate-50" : "bg-[#002451]")
+                (theme ? "bg-green-300" : "bg-[#002451]")
               }
             >
               <p>
