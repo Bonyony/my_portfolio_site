@@ -10,6 +10,7 @@ import {
   Projects,
   About,
   Contact,
+  Background,
 } from "./components";
 
 export const ThemeContext = createContext(true);
@@ -21,6 +22,7 @@ function App() {
     <>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <div className={theme ? "text-slate-900" : "text-white bg-[#0a022d]"}>
+          <Background />
           <Navbar />
           <Suspense>
             <Hero />
