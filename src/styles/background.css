@@ -1,6 +1,9 @@
 .main {
   overflow: hidden;
 }
+svg {
+  fill: #000000;
+}
 /* Circles */
 .circleRed {
   height: 150px;

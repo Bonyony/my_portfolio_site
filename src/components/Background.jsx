@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
-import "./background.css";
+import "../styles/background.css";
 
 const Background = () => {
   const { theme } = useContext(ThemeContext);
