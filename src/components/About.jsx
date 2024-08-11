@@ -12,7 +12,7 @@ const About = () => {
         <div
           className={
             "font-mono text-sm sm:text-base mt-5 p-2  rounded-tr-xl rounded-bl-xl " +
-            (theme ? "bg-indigo-200" : "bg-[#002451]")
+            (theme ? "bg-blue-300" : "bg-[#002451]")
           }
         >
           <p>
@@ -38,8 +38,8 @@ const About = () => {
             </strong>
             ). <br /> I am an artist, mainly working with collage/mixed media or
             painting. 3D rendering is becoming a new favorite. <br />I adore
-            animals and have volunteered with a wildlife rehab for years now. My
-            favorite animals are Ocelots and the humble Hyrax. <br />
+            animals and have volunteered with a wildlife rehab for many years
+            now. My favorite animals are Ocelots and the humble Hyrax. <br />
             And yes, I love to code :)
           </p>
         </div>

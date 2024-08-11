@@ -10,6 +10,7 @@ import {
   Projects,
   About,
   Contact,
+  Background,
 } from "./components";
 
 export const ThemeContext = createContext(true);
@@ -19,19 +20,26 @@ function App() {
 
   return (
     <>
-      <ThemeContext.Provider value={{ theme, setTheme }}>
-        <div className={theme ? "text-slate-900" : "text-white bg-[#0a022d]"}>
-          <Navbar />
-          <Suspense>
-            <Hero />
-            <Projects />
-            <Skills />
-            <About />
-            <Contact />
-          </Suspense>
-          <Footer />
-        </div>
-      </ThemeContext.Provider>
+      <div className="overflowHandler">
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+          <div
+            className={
+              "-z-30 " + (theme ? "text-slate-900" : "text-white bg-[#0a022d]")
+            }
+          >
+            {/* <Background /> */}
+            <Navbar />
+            <Suspense>
+              <Hero />
+              <Projects />
+              <Skills />
+              <About />
+              <Contact />
+            </Suspense>
+            <Footer />
+          </div>
+        </ThemeContext.Provider>
+      </div>
     </>
   );
 }
