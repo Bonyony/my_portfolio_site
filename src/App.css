@@ -8,3 +8,8 @@
 body {
   overflow-x: hidden;
 }
+/* These are needed to get rid of mobile overflow */
+.overflowHandler {
+  overflow-x: hidden;
+  position: relative;
+}
