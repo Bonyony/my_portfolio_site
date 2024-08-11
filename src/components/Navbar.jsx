@@ -181,13 +181,14 @@ const Navbar = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={
-                    "w-10 h-10  transition-all duration-100 " +
+                    "w-10 h-10 bg-opacity-55 transition-all duration-100 " +
                     (theme
-                      ? "bg-white hover:bg-red-300"
+                      ? "bg-white  hover:bg-red-300"
                       : "bg-[#0a022d] hover:bg-red-500")
                   }
                   viewBox="0 0 20 20"
-                  fill="currentColor"
+                  // fill={"currentColor"}
+                  stroke={theme ? "black" : "white"}
                 >
                   <path
                     fillRule="evenodd"
