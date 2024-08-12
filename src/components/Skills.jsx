@@ -14,6 +14,7 @@ const Skills = () => {
           id="logos"
           className="grid grid-flow-row gap-5 mt-5 text-sm sm:text-base font-mono"
         >
+          {/* Webstack */}
           <div
             id="webstack"
             className="flex flex-col lg:flex-row lg:justify-between"
@@ -85,7 +86,7 @@ const Skills = () => {
               </p>
             </div>
           </div>
-
+          {/* Frameworks */}
           <div
             id="frameworks"
             className="flex flex-col lg:flex-row lg:justify-between"
@@ -182,7 +183,7 @@ const Skills = () => {
               </p>
             </div>
           </div>
-
+          {/* Utility */}
           <div
             id="utility"
             className="flex flex-col lg:flex-row lg:justify-between"
@@ -215,7 +216,7 @@ const Skills = () => {
               </p>
             </div>
           </div>
-
+          {/* New Dev Skills */}
           <div
             id="newSkills"
             className="flex flex-col lg:flex-row lg:justify-between"
@@ -224,7 +225,9 @@ const Skills = () => {
               {/* Skills that I am learning */}
               {/* expo */}
               <svg
-                fill={theme ? "#000000" : "#f8f8ff"}
+                fill={theme ? "#000000" : "#FFFFFF"}
+                stroke={theme ? "" : "white"}
+                strokeWidth={0.5}
                 width="100px"
                 height="100px"
                 viewBox="0 0 32 32"
@@ -274,6 +277,111 @@ const Skills = () => {
                 combined with Expo Go, writing React Native code and seeing it
                 appear on your phone screen truly feels like living in the
                 future. I use TypeScript mainly in collaboration with others.
+              </p>
+            </div>
+          </div>
+          {/* UX / UI Apps */}
+          <div
+            id="UXSkills"
+            className="flex flex-col lg:flex-row lg:justify-between"
+          >
+            <div className="flex flex-row justify-evenly lg:justify-normal lg:gap-5">
+              {/* illustrator */}
+              <svg
+                height="100px"
+                width="100px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 52 52"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    fill="#472112"
+                    d="M40.824,52H11.176C5.003,52,0,46.997,0,40.824V11.176C0,5.003,5.003,0,11.176,0h29.649
+		C46.997,0,52,5.003,52,11.176v29.649C52,46.997,46.997,52,40.824,52z"
+                  />
+                  <g>
+                    <path
+                      fill="#FFBD2E"
+                      d="M30.68,39h-3.24l-2.76-9.04h-8.32L13.72,39H10.6l8.24-28h3.32L30.68,39z M23.96,27l-3.48-11.36
+			L17.12,27H23.96z"
+                    />
+                    <path
+                      fill="#FFBD2E"
+                      d="M37.479,12.24c0,0.453-0.16,0.84-0.48,1.16c-0.32,0.319-0.7,0.479-1.14,0.479
+			c-0.44,0-0.827-0.166-1.16-0.5c-0.334-0.333-0.5-0.713-0.5-1.14s0.166-0.807,0.5-1.141c0.333-0.333,0.72-0.5,1.16-0.5
+			c0.44,0,0.82,0.16,1.14,0.48C37.32,11.4,37.479,11.787,37.479,12.24z M37.24,39h-2.88V18.96h2.88V39z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              {/* photoshop */}
+              <svg
+                height="100px"
+                width="100px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 495 495"
+                xml:space="preserve"
+              >
+                <g>
+                  <polygon
+                    fill="#006DF0"
+                    points="247.5,0 247.5,40 455,40 455,455 247.5,455 247.5,495 495,495 495,0 	"
+                  />
+                  <polygon
+                    fill="#2488FF"
+                    points="40,455 40,40 247.5,40 247.5,0 0,0 0,495 247.5,495 247.5,455 	"
+                  />
+                  <path
+                    fill="#2488FF"
+                    d="M326.27,333.414c-16.269,0-37.082-7.252-47.173-13.307l-9.743,39.196
+		c13.307,7.252,33.866,12.299,56.916,12.299c50.361,0,76.376-24.124,76.376-57.012c-0.379-25.891-14.412-42.887-47.932-54.333
+		c-21.537-7.631-28.318-11.952-28.318-20.213c0-8.988,7.506-14.412,20.813-14.412c15.136,0,30.177,5.803,38.185,10.122l9.714-37.839
+		c-10.817-5.424-29.168-10.091-49.76-10.091c-43.58,0-71.676,24.88-71.676,57.644c-0.379,20.938,13.655,40.774,50.139,52.976
+		c20.432,6.906,25.856,11.194,25.856,20.182C349.668,327.644,342.762,333.414,326.27,333.414z"
+                  />
+                  <path
+                    fill="#2488FF"
+                    d="M146.687,281.194c5.045,0.726,11.573,0.978,18.698,0.978c32.417,0,60.23-7.883,78.834-25.479
+		c14.539-13.686,22.42-33.899,22.42-57.643c0-23.777-10.343-43.99-25.983-56.194c-16.146-13.055-40.268-19.456-74.167-19.456
+		c-33.489,0-57.264,2.21-74.136,5.046v239.593h54.333V281.194z M146.782,167.012c3.847-1.105,11.479-2.209,22.547-2.209
+		c27.465,0,42.885,13.276,43.01,35.572c0,24.911-18.132,39.669-47.3,39.669c-7.884,0-13.559-0.346-18.257-1.357V167.012z"
+                  />
+                </g>
+              </svg>
+              {/*  Inkscape or Gimp */}
+              <svg
+                fill={theme ? "#000000" : "white"}
+                stroke={theme ? "" : "white"}
+                strokeWidth={0.5}
+                width="100px"
+                height="100px"
+                viewBox="0 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>inkscape</title>
+                <path d="M25.431 25.209c-1.263 1.135 0.142 2.284 1.388 1.552 0.277-0.281-0.008-1.27-1.387-1.552zM7.296 27.041c0.98 0.849 2.496-0.211 2.949-1.395-0.95-1.262-4.507 0.046-2.949 1.395zM25.951 24.054c0 0.562 4.141 0.931 4.141-0.132-0.397-0.733-1.16-1.222-2.038-1.222-0.929 0-1.731 0.549-2.097 1.34l-0.006 0.014zM13.233 2.216l-11.072 11.329c-3.74 4.632 2.547 4.094 5.241 5.427 0.967 0.988-3.705 1.718-2.738 2.707 0.966 0.988 5.846 1.904 6.814 2.892 0.966 0.988-1.979 2.037-1.012 3.024 0.966 0.99 3.203 0.052 3.621 2.334 0.297 1.63 4.029 0.7 5.853-0.635 0.967-0.988-1.849-0.896-0.882-1.884 2.403-2.458 4.642-0.892 5.465-3.357 0.406-1.217-3.539-1.876-2.571-2.864 2.782-1.625 12.395-2.682 7.833-7.243l-11.474-11.73c-0.659-0.629-1.554-1.016-2.539-1.016s-1.88 0.387-2.54 1.017l0.001-0.001zM17.641 3.012l4.38 4.449c0.207 0.229 0.333 0.533 0.333 0.868 0 0.226-0.058 0.438-0.159 0.623l0.003-0.007-2.174-1.739-0.427 2.576-1.818-0.959-2.909 1.837-0.963-3.874-1.563 2.704h-2.391c-0.975 0-1.088-1.237-0.204-2.122 1.546-1.668 3.32-3.369 4.285-4.355 0.466-0.453 1.102-0.732 1.804-0.732s1.338 0.279 1.804 0.733l-0.001-0.001zM10.584 19.588c0.296 0.184 4.771 1.093 5.865 1.275 0.379 0.080 0.11 0.47-0.412 0.734-1.178 0.314-6.894-2.008-5.452-2.008z"></path>
+              </svg>
+            </div>
+            <div
+              className={
+                " lg:max-w-[50%] mt-4 lg:mt-0 p-2 rounded-tr-xl rounded-bl-xl " +
+                (theme ? "bg-pink-300" : "bg-[#002451]")
+              }
+            >
+              <p>
+                <strong>Illustrator</strong>, <strong>PhotoShop</strong> and{" "}
+                <strong>Inkscape</strong> are the technologies that I use for
+                digital art. I enjoy creating multimedia art, utilizing a
+                collage of physical and digital mediums. I use both vector and
+                raster graphics depending on my needs.
               </p>
             </div>
           </div>
