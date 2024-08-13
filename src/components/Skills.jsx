@@ -179,7 +179,9 @@ const Skills = () => {
               <p>
                 <strong>React</strong>, <strong>TailwindCSS</strong> and{" "}
                 <strong>Vite</strong> are my preferred frameworks and bundler.
-                They each make my workflow much faster and easier.
+                They each make my workflow much faster and easier. I also have
+                experience with <strong>Bootstrap</strong> and other component
+                libraries.
               </p>
             </div>
           </div>

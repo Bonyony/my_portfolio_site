@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container">
         <div id="home"></div>
         <img
-          className="absolute -z-10 top-[220px] sm:top-[180px] md:top-[95px] lg:top-[50px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] "
+          className="absolute -z-10 top-[220px] sm:top-[180px] md:top-[95px] lg:top-[50px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] transition-all duration-300"
           src={hyrax}
           alt="A hyrax on a cake"
         />
