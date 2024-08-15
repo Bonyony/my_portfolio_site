@@ -25,11 +25,12 @@ const Projects = () => {
 
             <p className="text-sm sm:text-base">
               This is a page I created to show off my renders made with the
-              React-Three-Fiber and Drei libraries. It is intended to be a
-              showcase of features and designs that can integrate into webpages.
-              This website is not meant to be "finished", but rather continually
-              updated and remade as I continue to progress with 3D modeling and
-              development in my career.
+              React-Three-Fiber and Drei libraries. It is a showcase of features
+              and designs that can integrate into webpages. This website is
+              continually updated and remade as I continue to progress with 3D
+              modeling and development in my career. Although it is mobile
+              friendly, I highly reccomend using a laptop or desktop to interact
+              with this page!
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-2 sm:mx-2">
               <img
