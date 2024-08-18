@@ -10,7 +10,7 @@ import {
   Projects,
   About,
   Contact,
-  Background,
+  ImageGallery,
 } from "./components";
 
 export const ThemeContext = createContext(true);
@@ -33,6 +33,7 @@ function App() {
               <Hero />
               <Projects />
               <Skills />
+              <ImageGallery />
               <About />
               <Contact />
             </Suspense>
