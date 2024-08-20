@@ -10,18 +10,33 @@ import image7 from "../assets/images/TVparty.jpeg";
 import image8 from "../assets/images/HorseRider.jpeg";
 import image9 from "../assets/images/PsychRide.jpeg";
 
-const handleClick = () => {};
+const handleClose = () => {
+  setLightBoxDisplay(false);
+  console.log(lightboxDisplay);
+};
 
-const ImageBox = (image) => {
+const ImageBox = ({ lightboxDisplay }) => {
   return (
-    <div className=" h-screen w-screen bg-slate-800 opacity-20">
-      <img className="flex justify-center align-middle" src={image} alt="" />
-    </div>
+    <dialog open>
+      <div className={"modal hidden"}>
+        <span className="close" onClick={handleClose}>
+          &times;
+        </span>
+        <img className="modal-content" src={image1} />
+        <p id="caption"></p>
+      </div>
+    </dialog>
   );
 };
 
 const ImageGallery = () => {
+  const [selected, setSelected] = useState(null);
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
+
+  const handleClick = () => {
+    console.log(lightboxDisplay);
+  };
+
   return (
     <>
       <div className="gallery px-4 sm:px-12 lg:px-24">
@@ -45,7 +60,7 @@ const ImageGallery = () => {
         />
         <img className="cursor-pointer" src={image5} alt="Looking Glass" />
 
-        <img className="cursor-pointer" src={image6} alt="Double Look" />
+        <img className="cursor-pointer " src={image6} alt="Double Look" />
         <img className="cursor-pointer" src={image7} alt="TV Party" />
 
         <img className="cursor-pointer" src={image8} alt="Desperado" />
