@@ -8,7 +8,9 @@ const Skills = () => {
     <>
       <div id="skills"></div>
       <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24 ">
-        <h1 className="font-black text-3xl sm:text-5xl">SKILLS</h1>
+        <h1 className="righteous-regular font-black text-3xl sm:text-5xl">
+          SKILLS
+        </h1>
 
         <div
           id="logos"

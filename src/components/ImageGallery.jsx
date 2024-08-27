@@ -22,7 +22,9 @@ const ImageGallery = () => {
   return (
     <>
       <div className="px-4 sm:px-12 lg:px-24">
-        <h1 className="font-black text-3xl sm:text-5xl mb-5">SOME ART</h1>
+        <h1 className="righteous-regular font-black text-3xl sm:text-5xl mb-5">
+          SOME ART
+        </h1>
 
         <div className="gallery ">
           <img
