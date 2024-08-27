@@ -2,13 +2,17 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { ThemeContext } from "../App";
 import myLogo from "../assets/images/lookingGlass.jpeg";
+import { motion } from "framer-motion";
 
 const Menu = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <ul className="flex flex-row items-center gap-14 p-2 font-mono ">
-      <li>
+      <motion.li
+        whileHover={{ rotate: 4, scale: 1.15 }}
+        whileTap={{ scale: 1 }}
+      >
         <a
           className={
             "p-1 transition-all duration-100 " +
@@ -20,8 +24,11 @@ const Menu = () => {
         >
           Home
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{ rotate: -2.7, scale: 1.15 }}
+        whileTap={{ scale: 1 }}
+      >
         <a
           className={
             " p-1 transition-all duration-100 " +
@@ -33,8 +40,11 @@ const Menu = () => {
         >
           Projects
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{ rotate: 4, scale: 1.15 }}
+        whileTap={{ scale: 1 }}
+      >
         <a
           className={
             " p-1 transition-all duration-100 " +
@@ -46,8 +56,11 @@ const Menu = () => {
         >
           Skills
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{ rotate: -5, scale: 1.15 }}
+        whileTap={{ scale: 1 }}
+      >
         <a
           className={
             " p-1 transition-all duration-100 " +
@@ -59,8 +72,11 @@ const Menu = () => {
         >
           About
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        whileHover={{ rotate: 4.2, scale: 1.15 }}
+        whileTap={{ scale: 1 }}
+      >
         <a
           className={
             " p-1 transition-all duration-100 " +
@@ -72,7 +88,7 @@ const Menu = () => {
         >
           Contact
         </a>
-      </li>
+      </motion.li>
     </ul>
   );
 };
