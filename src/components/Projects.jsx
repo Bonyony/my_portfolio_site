@@ -11,7 +11,9 @@ const Projects = () => {
     <>
       <div id="projects"></div>
       <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
-        <h1 className="font-black text-3xl sm:text-5xl ">SELECTED PROJECTS</h1>
+        <h1 className="righteous-regular font-black text-3xl sm:text-5xl ">
+          SELECTED PROJECTS
+        </h1>
 
         <div id="projectTotal1" className="font-mono justify-between mt-5">
           <div
