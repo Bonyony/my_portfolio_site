@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className="overflowHandler">
+      <div className="overflowHandler max-w-[2200px]">
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div
             className={

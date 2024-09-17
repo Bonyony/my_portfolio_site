@@ -11,15 +11,15 @@ const Hero = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <div id="home"></div>
         <img
-          className="absolute -z-10 top-[220px] sm:top-[180px] md:top-[95px] lg:top-[50px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] transition-all duration-300"
+          className="absolute -z-10 top-[280px] sm:top-[180px] md:top-[95px] lg:top-[50px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] xl:left-[500px] transition-all duration-300"
           src={hyrax}
           alt="A hyrax on a cake"
         />
 
-        <div className="mx-4 sm:mx-12 lg:mx-24 pt-40 mb-24 ">
+        <div className="mx-4 sm:mx-12 lg:mx-24 pt-56 mb-24 h-[460px]">
           <motion.h1
             drag
             dragConstraints={{ left: 0, right: 0, top: 10, bottom: 10 }}
