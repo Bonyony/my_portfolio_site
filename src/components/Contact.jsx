@@ -10,6 +10,7 @@ const Contact = () => {
         <h1 className="righteous-regular font-black text-3xl sm:text-5xl ">
           CONTACT ME
         </h1>
+        {/* Place socials here GitHub, LinkedIn, Instagram */}
         <Form />
       </div>
     </>
