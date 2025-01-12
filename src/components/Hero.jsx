@@ -24,7 +24,7 @@ const Hero = () => {
             dragConstraints={{ left: 0, right: 0, top: 10, bottom: 10 }}
             dragElastic={0.4}
             dragTransition={{ bounceStiffness: 400, bounceDamping: 9 }}
-            className="righteous-regular font-black text-4xl sm:text-6xl sm:w-1/2 "
+            className="righteous-regular font-black text-4xl sm:text-6xl sm:w-1/2 cursor-grab"
           >
             Frank Francione
           </motion.h1>

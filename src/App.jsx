@@ -30,7 +30,7 @@ function App() {
             {/* <Background /> */}
             <Navbar />
             <Suspense>
-              <div className="container">
+              <div className="max-w-[1536px] lg:items-center">
                 <Hero />
                 <Projects />
                 <Skills />

@@ -32,11 +32,11 @@ const Form = () => {
   return (
     <div
       className={
-        "font-mono text-sm sm:text-base mt-5 p-2   rounded-tr-xl rounded-bl-xl " +
+        "font-mono text-sm sm:text-base mt-5 p-2 md:max-w-[800px] w-full flex flex-row justify-center rounded-tr-xl rounded-bl-xl " +
         (theme ? "bg-neutral-300" : "bg-[#404F7D]")
       }
     >
-      <form onSubmit={onSubmit} className="flex flex-col w-full">
+      <form onSubmit={onSubmit} className="flex flex-col w-full ">
         <label htmlFor="name">YOUR NAME: </label>
         <input type="text" name="name" placeholder="Jimbo Jones" required />
         <label className="mt-3" htmlFor="email">
