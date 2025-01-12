@@ -30,12 +30,14 @@ function App() {
             {/* <Background /> */}
             <Navbar />
             <Suspense>
-              <Hero />
-              <Projects />
-              <Skills />
-              <ImageGallery />
-              <About />
-              <Contact />
+              <div className="container">
+                <Hero />
+                <Projects />
+                <Skills />
+                <ImageGallery />
+                <About />
+                <Contact />
+              </div>
             </Suspense>
             <Footer />
           </div>
