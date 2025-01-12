@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
+
 import mggPic from "../assets/images/MGG_homepage.png";
 import renderPic from "../assets/images/react-render-pic.png";
 import chordPic from "../assets/images/chordfinderpic.png";
+import hyraxChat from "../assets/images/Hyrax_Corp_Chat_pic.png";
+
 import { ThemeContext } from "../App";
 
 const Projects = () => {
@@ -11,9 +14,90 @@ const Projects = () => {
     <>
       <section id="projects" className="">
         <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
-          <h1 className="righteous-regular font-black text-3xl sm:text-5xl ">
+          <h2 className="righteous-regular font-black text-3xl sm:text-5xl ">
             SELECTED PROJECTS
-          </h1>
+          </h2>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-5 font-mono">
+            <div
+              className={
+                "card  w-auto " + (theme ? "bg-inherit" : "bg-[#002451]")
+              }
+            >
+              <figure>
+                <img src={hyraxChat} alt="An example of my chat application" />
+              </figure>
+              <div className="card-body">
+                <h3 className="card-title righteous-regular">
+                  Hyrax Corporation
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            {/* renders */}
+            <div
+              className={
+                "card  w-auto " + (theme ? "bg-inherit " : "bg-[#002451]")
+              }
+            >
+              <figure>
+                <img
+                  src={renderPic}
+                  alt="An example of my react-three-fiber renders"
+                />
+              </figure>
+              <div className="card-body ">
+                <h3 className="card-title righteous-regular">
+                  React 3D Renders
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            {/* Chord */}
+            <div
+              className={
+                "card  w-auto " + (theme ? "bg-inherit " : "bg-[#002451]")
+              }
+            >
+              <figure>
+                <img
+                  src={chordPic}
+                  alt="An example of my Chord Finder webpage"
+                />
+              </figure>
+              <div className="card-body ">
+                <h3 className="card-title righteous-regular">Chord Finder</h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            {/* MGG */}
+            <div
+              className={
+                "card  w-auto " + (theme ? "bg-inherit " : "bg-[#002451]")
+              }
+            >
+              <figure>
+                <img src={mggPic} alt="The homepage of Mellow Golem Games" />
+              </figure>
+              <div className="card-body ">
+                <h3 className="card-title righteous-regular">
+                  Mellow Golem Games
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* grid container for the overall layout */}
           <div className="grid grid-cols-2 gap-4 mt-5">
             <div id="projectTotal1" className="font-mono justify-between ">

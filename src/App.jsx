@@ -39,6 +39,7 @@ function App() {
                 <Contact />
               </div>
             </Suspense>
+            <div className="divider"></div>
             <Footer />
           </div>
         </ThemeContext.Provider>
