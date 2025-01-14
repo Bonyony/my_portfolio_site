@@ -63,7 +63,7 @@ const Form = () => {
             "mt-4 btn rounded-md " +
             (theme
               ? "bg-white btn-ghost hover:bg-gray-100"
-              : "bg-white text-black hover:bg-emerald-500")
+              : "bg-white text-black hover:bg-emerald-500 border-none")
           }
           type="submit"
         >

@@ -59,7 +59,7 @@ const Projects = () => {
                   <a
                     href="https://github.com/Bonyony/WY-fullstack/tree/master"
                     target="_blank"
-                    className="btn"
+                    className={"btn "}
                   >
                     Code Repository
                   </a>

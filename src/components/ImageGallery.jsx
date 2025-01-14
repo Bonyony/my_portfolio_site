@@ -21,10 +21,10 @@ const ImageGallery = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="px-4 sm:px-12 lg:px-24">
-        <h1 className="righteous-regular font-black text-3xl sm:text-5xl mb-5">
+      <section className="px-4 sm:px-12 lg:px-24">
+        <h2 className="righteous-regular font-black text-3xl sm:text-5xl mb-5">
           SOME ART
-        </h1>
+        </h2>
 
         <div className="gallery ">
           <img
@@ -182,7 +182,7 @@ const ImageGallery = () => {
             },
           ]}
         />
-      </div>
+      </section>
     </>
   );
 };

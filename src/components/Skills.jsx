@@ -7,10 +7,10 @@ const Skills = () => {
   return (
     <>
       <div id="skills"></div>
-      <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24 ">
-        <h1 className="righteous-regular font-black text-3xl sm:text-5xl">
+      <section className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24 ">
+        <h2 className="righteous-regular font-black text-3xl sm:text-5xl">
           SKILLS
-        </h1>
+        </h2>
 
         <div
           id="logos"
@@ -390,7 +390,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

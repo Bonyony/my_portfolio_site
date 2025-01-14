@@ -8,10 +8,10 @@ const About = () => {
   return (
     <>
       <div id="about"></div>
-      <div className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
-        <h1 className="righteous-regular font-black text-3xl sm:text-5xl ">
+      <section className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
+        <h2 className="righteous-regular font-black text-3xl sm:text-5xl ">
           ABOUT
-        </h1>
+        </h2>
         <img
           className="-z-10 -rotate-45 lg:rotate-0 absolute bottom-[830px] sm:bottom-[720px] left-[60px] sm:left-[150px] md:left-[350px] transition-all duration-300"
           src={poolView}
@@ -51,7 +51,7 @@ const About = () => {
             And yes, I love to code :)
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 };
