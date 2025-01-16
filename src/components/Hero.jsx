@@ -11,14 +11,14 @@ const Hero = () => {
 
   return (
     <>
-      <section id="home" className="">
+      <section id="home" className="  ">
         <img
-          className="absolute -z-10 top-[280px] sm:top-[180px] md:top-[95px] lg:top-[20px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] xl:left-[500px] transition-all duration-300"
+          className="-z-10 absolute  top-[280px] sm:top-[180px] md:top-[95px] lg:top-[20px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] xl:left-[500px] transition-all duration-300"
           src={hyrax}
           alt="A hyrax on a cake"
         />
 
-        <div className="mx-4 sm:mx-12 lg:mx-24 pt-56 mb-24 h-[460px]">
+        <div className="mx-4 sm:mx-12 lg:mx-24 pt-56 mb-24 h-[460px] z-30">
           <motion.h1
             drag
             dragConstraints={{ left: 0, right: 0, top: 10, bottom: 10 }}

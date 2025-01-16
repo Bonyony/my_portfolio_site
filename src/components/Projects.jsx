@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 
+// import "../styles/psychCard.css";
+
 import mggPic from "../assets/images/MGG_homepage.png";
 import renderPic from "../assets/images/react-render-pic.png";
 import chordPic from "../assets/images/chordfinderpic.png";
@@ -17,11 +19,11 @@ const Projects = () => {
           <h2 className="righteous-regular font-black text-3xl sm:text-5xl ">
             SELECTED PROJECTS
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5 font-mono">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 font-mono">
             {/* raxchat */}
             <div
               className={
-                "card  w-auto " + (theme ? "bg-inherit" : "bg-[#002451]")
+                "card w-auto h-full " + (theme ? "bg-white" : "bg-[#002451]")
               }
             >
               <figure>
@@ -50,7 +52,13 @@ const Projects = () => {
                     MongoDB
                   </div>
                 </div>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>
+                  A Full Stack chat application that features user
+                  authentication and profiles with customization options. Other
+                  key features are a user dashboard, 3D rendered elements on
+                  certain pages with React-three-fiber and a design utilizing
+                  DaisyUI.
+                </p>
 
                 <div className="flex flex-row lg:flex-row gap-2 lg:gap-1 justify-end">
                   <div className="tooltip" data-tip="Coming Soon">
@@ -69,7 +77,7 @@ const Projects = () => {
             {/* renders */}
             <div
               className={
-                "card  w-auto " + (theme ? "bg-inherit " : "bg-[#002451]")
+                "card w-auto h-full " + (theme ? "bg-white " : "bg-[#002451]")
               }
             >
               <figure>
@@ -124,7 +132,8 @@ const Projects = () => {
             {/* Chord */}
             <div
               className={
-                "card  w-auto " + (theme ? "bg-inherit " : "bg-[#002451]")
+                "card  w-auto h-full " +
+                (theme ? "bg-inherit " : "bg-[#002451]")
               }
             >
               <figure>
@@ -174,7 +183,8 @@ const Projects = () => {
             {/* MGG */}
             <div
               className={
-                "card  w-auto " + (theme ? "bg-inherit " : "bg-[#002451]")
+                "card  w-auto h-full " +
+                (theme ? "bg-inherit " : "bg-[#002451]")
               }
             >
               <figure>
