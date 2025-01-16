@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <section id="home" className="  ">
         <img
-          className="-z-10 absolute  top-[280px] sm:top-[180px] md:top-[95px] lg:top-[20px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[400px] xl:left-[500px] transition-all duration-300"
+          className="-z-10 absolute -rotate-12 lg:rotate-0 top-[280px] sm:top-[180px] md:top-[95px] lg:top-[20px] left-[140px] sm:left-[250px] md:left-[300px] lg:left-[500px] xl:left-[700px] transition-all duration-300"
           src={hyrax}
           alt="A hyrax on a cake"
         />
@@ -32,7 +32,7 @@ const Hero = () => {
             <p>Developer.</p>
 
             <p>Design focused.</p>
-            <p>Musician, Writer, Artist, Animal Lover, etc.</p>
+            <p className="z-50">Musician, Writer, Artist, Animal Lover, etc.</p>
           </div>
           <div className="font-bold font-mono text-sm sm:text-base my-5">
             <Switch />

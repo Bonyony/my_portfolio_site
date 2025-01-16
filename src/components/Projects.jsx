@@ -54,10 +54,12 @@ const Projects = () => {
                 </div>
                 <p>
                   A Full Stack chat application that features user
-                  authentication and profiles with customization options. Other
-                  key features are a user dashboard, 3D rendered elements on
-                  certain pages with React-three-fiber and a design utilizing
-                  DaisyUI.
+                  authentication and profiles with customization options. I
+                  built the UI with TailwindCSS and DaisyUI for a sleek and
+                  clean look. Some extra touches are added with
+                  React-three-fiber for fun additions. <br />
+                  <br />
+                  Live site coming very soon!
                 </p>
 
                 <div className="flex flex-row lg:flex-row gap-2 lg:gap-1 justify-end">
