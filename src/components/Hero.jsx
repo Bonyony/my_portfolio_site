@@ -52,7 +52,7 @@ const Hero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <title>Github-color</title>
+                  <title>Github</title>
                   <desc>Created with Sketch.</desc>
                   <defs></defs>
                   <g
@@ -90,7 +90,7 @@ const Hero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <title>LinkedIn-color</title>
+                  <title>LinkedIn</title>
                   <desc>Created with Sketch.</desc>
                   <defs></defs>
                   <g

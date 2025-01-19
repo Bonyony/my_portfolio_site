@@ -21,7 +21,7 @@ const About = () => {
           className={
             "font-mono text-sm sm:text-base mt-5 p-2 md:max-w-[800px] mx-auto w-full rounded-tr-xl rounded-bl-xl " +
             (theme
-              ? "bg-white bg-opacity-75 border-black  border-2"
+              ? "bg-white bg-opacity-85 border-black  border-2"
               : "bg-[#002451]")
           }
         >
