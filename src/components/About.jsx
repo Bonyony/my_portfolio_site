@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <div id="about"></div>
-      <section className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24">
+      <section className="mx-4 sm:mx-12 lg:mx-24 mt-40 mb-24 ">
         <h2 className="righteous-regular font-black text-3xl sm:text-5xl ">
           ABOUT
         </h2>
@@ -19,36 +19,21 @@ const About = () => {
         />
         <div
           className={
-            "font-mono text-sm sm:text-base mt-5 p-2  rounded-tr-xl rounded-bl-xl " +
-            (theme ? "bg-blue-300" : "bg-[#002451]")
+            "font-mono text-sm sm:text-base mt-5 p-2 md:max-w-[800px] mx-auto w-full rounded-tr-xl rounded-bl-xl " +
+            (theme
+              ? "bg-white bg-opacity-75 border-black  border-2"
+              : "bg-[#002451]")
           }
         >
-          <p>
-            My name is <strong>Frank Francione</strong>. <br /> I love playing
-            music (guitar, bass, drums, singing, piano and maybe some harmonica
-            too!). My favorite artists are{" "}
-            <strong className={theme ? "text-purple-700" : "text-purple-300"}>
-              Prince
-            </strong>{" "}
-            and <strong>The Beatles</strong>. <br />I am a creative writer!
-            Songs + poetry (and RPG supplements at{" "}
-            <strong>
-              <a
-                href="https://www.mellowgolem.com/"
-                target="_blank"
-                className={
-                  "underline  " +
-                  (theme ? "hover:text-slate-500" : "hover:text-slate-300")
-                }
-              >
-                Mellow Golem Games
-              </a>
-            </strong>
-            ). <br /> I am an artist, mainly working with collage/mixed media or
-            painting. 3D rendering is becoming a new favorite. <br />I adore
-            animals and have volunteered with a wildlife rehab for many years
-            now. My favorite animals are Ocelots and the humble Hyrax. <br />
-            And yes, I love to code :)
+          <p className="text-left">
+            I'm always looking for new opportunities regarding tech and design
+            work. Want to try something different? Me too.
+            <br />
+            <br />
+            My favorite animals are: Hyraxes, Ocelots, Opossums, Manuls, Gila
+            Monsters, Double Crested Cormorants, Nighthawks, Cedar Waxwings, the
+            list goes on. If you want guitar lessons or personal training,
+            contact me below. If not, contact me anyway.
           </p>
         </div>
       </section>
