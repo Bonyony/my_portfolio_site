@@ -32,17 +32,32 @@ const Form = () => {
   return (
     <div
       className={
-        "font-mono text-sm sm:text-base mt-5 p-2 md:max-w-[800px] mx-auto w-full flex flex-row justify-center rounded-tr-xl rounded-bl-xl " +
-        (theme ? "bg-neutral-300" : "bg-[#404F7D]")
+        "font-mono text-sm sm:text-base mt-5 py-2 px-4 md:max-w-[800px] mx-auto w-full flex flex-row justify-center rounded-lg " +
+        (theme
+          ? "bg-white bg-opacity-75 border-2 border-black border-opacity-75"
+          : "bg-[#404F7D]")
       }
     >
       <form onSubmit={onSubmit} className="flex flex-col w-full ">
         <label htmlFor="name">YOUR NAME: </label>
-        <input type="text" name="name" placeholder="Jimbo Jones" required />
+        <input
+          className={
+            "p-1  rounded-md " +
+            (theme ? "border-2 border-slate-800" : "border-none")
+          }
+          type="text"
+          name="name"
+          placeholder="Jimbo Jones"
+          required
+        />
         <label className="mt-3" htmlFor="email">
           YOUR EMAIL:{" "}
         </label>
         <input
+          className={
+            "p-1  rounded-md " +
+            (theme ? "border-2 border-slate-800" : "border-none")
+          }
           type="email"
           name="email"
           placeholder="possumluvr@gmail.com"
@@ -52,6 +67,10 @@ const Form = () => {
           YOUR MESSAGE FOR ME:{" "}
         </label>
         <textarea
+          className={
+            "p-1  rounded-md " +
+            (theme ? "border-2 border-slate-800" : "border-none")
+          }
           rows="4"
           name="message"
           placeholder="This is the best website ever!!!1!"

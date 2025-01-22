@@ -20,17 +20,15 @@ function App() {
 
   return (
     <>
-      <div className="overflowHandler max-w-[2200px]">
+      <div className="overflowHandler">
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div
-            className={
-              "-z-30 " + (theme ? "text-slate-900 " : "text-white bg-[#0a022d]")
-            }
+            className={theme ? "text-slate-900 " : "text-white bg-[#0a022d]"}
           >
             {/* <Background /> */}
             <Navbar />
             <Suspense>
-              <div className="max-w-[1536px] lg:items-center">
+              <div className="max-w-[1700px] mx-auto">
                 <Hero />
                 <Projects />
                 <Skills />

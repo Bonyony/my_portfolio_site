@@ -13,15 +13,15 @@ const About = () => {
           ABOUT
         </h2>
         <img
-          className="-z-10 -rotate-45 lg:rotate-0 absolute bottom-[830px] sm:bottom-[720px] left-[60px] sm:left-[150px] md:left-[350px] transition-all duration-300"
+          className="-z-10 -rotate-45 lg:rotate-0 absolute bottom-[830px] sm:bottom-[720px] left-[60px] sm:left-[150px] md:left-[350px] xl:left-1/2 xl:rotate-45 transition-all duration-300"
           src={poolView}
           alt="A view of the pool"
         />
         <div
           className={
-            "font-mono text-sm sm:text-base mt-5 p-2 md:max-w-[800px] mx-auto w-full rounded-tr-xl rounded-bl-xl " +
+            "font-mono text-sm sm:text-base mt-5 p-4 md:max-w-[800px] mx-auto w-full rounded-tr-xl rounded-bl-xl " +
             (theme
-              ? "bg-white bg-opacity-85 border-black  border-2"
+              ? "bg-white bg-opacity-75 border-black  border-2"
               : "bg-[#002451]")
           }
         >
