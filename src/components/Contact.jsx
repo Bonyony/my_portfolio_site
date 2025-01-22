@@ -11,7 +11,7 @@ const Contact = () => {
     <>
       <section id="contact">
         <img
-          className="-z-10 absolute bottom-[240px] left-[-120px] md:left-[20%] transition-all duration-300"
+          className="-z-10 absolute bottom-[300px] sm:bottom-[240px] left-[-120px] md:left-[20%] transition-all duration-300"
           src={goatRider}
           alt="A woman on a goat"
         />

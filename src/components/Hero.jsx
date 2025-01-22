@@ -29,10 +29,18 @@ const Hero = () => {
             Frank Francione
           </motion.h1>
           <div className="font-bold font-mono text-sm sm:text-base mt-5 ">
-            <p>Developer.</p>
-
-            <p>Design focused.</p>
-            <p className="z-50">Musician, Writer, Artist, Animal Lover, etc.</p>
+            <p className="inline-block ">Developer.</p>
+            <br />
+            <p className="inline-block ">Design focused.</p>
+            <br />
+            <p
+              className={
+                "inline-block " +
+                (theme ? "bg-white bg-opacity-30 pr-1 rounded-sm" : "")
+              }
+            >
+              Musician, Writer, Artist, Animal Lover, etc.
+            </p>
           </div>
           <div className="font-bold font-mono text-sm sm:text-base my-5">
             <Switch />
