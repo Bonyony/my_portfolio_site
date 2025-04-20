@@ -6,6 +6,7 @@ import mggPic from "../assets/images/MGG_homepage.png";
 import renderPic from "../assets/images/react-render-pic.png";
 import chordPic from "../assets/images/chordfinderpic.png";
 import hyraxChat from "../assets/images/Hyrax_Corp_Chat_pic.png";
+import golangPic from "../assets/images/golang-cli.png";
 
 import { ThemeContext } from "../App";
 
@@ -20,6 +21,52 @@ const Projects = () => {
             SELECTED PROJECTS
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 font-mono">
+            {/* Go-CLI tool */}
+            <div
+              className={
+                "card w-auto h-full " + (theme ? "bg-white" : "bg-[#002451]")
+              }
+            >
+              <figure>
+                <img
+                  src={golangPic}
+                  alt="An example of my Golang application"
+                  className=""
+                />
+              </figure>
+              <div className="card-body">
+                <h3 className="card-title righteous-regular">
+                  Go Networking CLI
+                </h3>
+                <div className="flex flex-row flex-wrap justify-start gap-1">
+                  <div className="badge badge-outline rounded-full">Golang</div>
+                  <div className="badge badge-outline rounded-full">
+                    Cobra Package
+                  </div>
+                  <div className="badge badge-outline rounded-full">
+                    Go Standard Library
+                  </div>
+                </div>
+                <p>
+                  Originally meant to be a webscraper, I added on many features
+                  more in line with DevOps and computer networking to explore
+                  the (powerful) Golang standard library. Current
+                  functionalities include tracing IPv4 addresses, DNS lookups,
+                  website status and port testing.
+                  <br /> <b>You will need Go 1.22 to run this application.</b>
+                </p>
+
+                <div className="flex flex-row lg:flex-row gap-2 lg:gap-1 justify-end">
+                  <a
+                    href="https://github.com/Bonyony/go-webscraper"
+                    target="_blank"
+                    className={"btn "}
+                  >
+                    Code Repository
+                  </a>
+                </div>
+              </div>
+            </div>
             {/* raxchat */}
             <div
               className={
@@ -60,7 +107,7 @@ const Projects = () => {
                   for a sleek and clean look. Some extra touches are added with
                   React-three-fiber for fun additions. <br />
                   <br />
-                  Live demo coming very soon!
+                  <b>Live demo coming very soon!</b>
                 </p>
 
                 <div className="flex flex-row lg:flex-row gap-2 lg:gap-1 justify-end">
