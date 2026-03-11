@@ -107,13 +107,20 @@ const Projects = () => {
                   for a sleek and clean look. Some extra touches are added with
                   React-three-fiber for fun additions. <br />
                   <br />
-                  <b>Live demo coming very soon!</b>
+                  <b>
+                    Please note that the appserver may take a few minutes to
+                    activate!
+                  </b>
                 </p>
 
                 <div className="flex flex-row lg:flex-row gap-2 lg:gap-1 justify-end">
-                  <div className="tooltip" data-tip="Coming Soon">
-                    <button className="btn btn-disabled mr-1">Live Demo</button>
-                  </div>
+                  <a
+                    href="https://hyrax-corportation.vercel.app/"
+                    target="_blank"
+                    className="btn mr-1"
+                  >
+                    Live Demo
+                  </a>
                   <a
                     href="https://github.com/Bonyony/WY-fullstack/tree/master"
                     target="_blank"
