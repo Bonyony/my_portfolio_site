@@ -1,0 +1,22 @@
+// main nav
+.f-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    a {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
