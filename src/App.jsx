@@ -1,47 +1,21 @@
 import "./App.css";
 import React, { Suspense, createContext, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Header, Hero, Footer } from "./components";
 
-import {
-  Navbar,
-  Skills,
-  Hero,
-  Footer,
-  Projects,
-  About,
-  Contact,
-  ImageGallery,
-} from "./components";
-
-export const ThemeContext = createContext(true);
+// main Sass file
+import "./scss/main.scss";
 
 function App() {
-  const [theme, setTheme] = useState(true);
-
   return (
     <>
-      <div className="overflowHandler">
-        <ThemeContext.Provider value={{ theme, setTheme }}>
-          <div
-            className={theme ? "text-slate-900 " : "text-white bg-[#0a022d]"}
-          >
-            {/* <Background /> */}
-            <Navbar />
-            <Suspense>
-              <div className="max-w-[1700px] mx-auto">
-                <Hero />
-                <Projects />
-                <Skills />
-                <ImageGallery />
-                <About />
-                <Contact />
-              </div>
-            </Suspense>
-            <div className="divider"></div>
-            <Footer />
-          </div>
-        </ThemeContext.Provider>
-      </div>
+      <Header />
+      <main className="f-main">
+        <Suspense>
+          <Hero />
+        </Suspense>
+      </main>
+      <Footer />
     </>
   );
 }

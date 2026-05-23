@@ -1,11 +1,4 @@
-export { default as Footer } from "./Footer";
-export { default as Navbar } from "./Navbar";
-export { default as Hero } from "./Hero";
-export { default as Skills } from "./Skills";
-export { default as Projects } from "./Projects";
-export { default as About } from "./About";
-export { default as Contact } from "./Contact";
-export { default as Form } from "./Form";
-export { default as Switch } from "./Switch";
-export { default as Background } from "./Background";
-export { default as ImageGallery } from "./ImageGallery";
+export { default as Footer } from "./layouts/Footer";
+export { default as Header } from "./layouts/Header";
+export { default as Navbar } from "./navigation/Navbar";
+export { default as Hero } from "./core/Hero";
