@@ -8,11 +8,19 @@ const Navbar = () => {
 
   return (
     <nav className="f-nav">
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+      <ul className="f-nav__links">
+        <li className="f-nav__item">
+          <a href="">1 link</a>
+        </li>
+        <li className="f-nav__item">
+          <a href="">2 link</a>
+        </li>
+        <li className="f-nav__item">
+          <a href="">3 link</a>
+        </li>
+        <li className="f-nav__item">
+          <a href="">4 link</a>
+        </li>
       </ul>
     </nav>
   );
